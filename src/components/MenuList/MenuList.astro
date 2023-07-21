@@ -1,0 +1,22 @@
+---
+import "./MenuList.less";
+import { flavorList, withoutGluten } from "../../assets/data/flavorList";
+---
+
+<section id="menulist">
+	<div class="cs-container">
+		<div class="menu-intro">
+			<h2>Our flavors rotate throughout the year</h2>
+			<p class="subtitle">
+				Changing our flavors monthly keeps them interesting and fresh!
+			</p>
+		</div>
+		<div class="menulist-list">
+			<ul>
+				{flavorList.map((flavor) => <li><p class="flavor-item">{flavor}</p></li>)}
+                <li class="menulist-list-title">Cupcakes baked without gluten</li>
+                {withoutGluten.map((flavor) => <li><p class="flavor-item">{flavor}</p></li>)}
+			</ul>
+		</div>
+	</div>
+</section>
