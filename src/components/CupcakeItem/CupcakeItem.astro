@@ -1,0 +1,30 @@
+---
+import './CupcakeItem.less';
+const {name, price, description, additionalDesc, imgUrl} = Astro.props;
+
+const images = await Astro.glob("../../assets/images/cupcakes/*").then(files => {
+  return files.map(file => file.default);
+});
+
+const getFileFromArr = (arr, key) => {
+    let res = "";
+    arr.map((item) => {
+        if(item.includes(key)) {
+            res = item;
+        }
+    });
+    return res;
+}
+---
+
+<article class="cupcake-item">
+    <picture class="cs-image">
+        <source media="(max-width: 600px)" srcset={getFileFromArr(images, imgUrl)}>
+        <source media="(min-width: 601px)" srcset={getFileFromArr(images, imgUrl)}>
+        <img decoding="async" src={getFileFromArr(images, imgUrl)} alt="logo" width="2200" height="1500">
+    </picture>
+    <p class="cupcake-item-title">{name}</p>
+    <p class="cupcake-item-price">{price}</p>
+    <p class="cupcake-item-description">{description}</p>
+    <p class="cupcake-item-additionalDesc">{additionalDesc}</p>
+</article>

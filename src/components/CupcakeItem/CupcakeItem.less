@@ -1,0 +1,46 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    .cupcake-item {
+        width: 100%;
+        color: var(--bodyTextColor);
+        font-size: var(--bodyFontSize);
+        font-family: 'Sorts Mill Goudy', cursive;
+        font-style: italic;
+        margin-bottom: 3rem;
+        max-width: (445/16rem);
+
+        /*
+        .cs-image {
+            display: block;
+            position: relative;
+
+            img {
+                display: block;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                object-position: 50% 50%;
+                
+            }
+        }
+        */
+        .cs-image img {
+            width: 100% !important;
+            height: auto !important;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .cupcake-item-title {
+            font-weight: 600;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .cupcake-item-price,
+        .cupcake-item-description,
+        .cupcake-item-additionalDesc {
+            line-height: 2rem;
+            margin: 1rem 0;
+        }
+    }
+}

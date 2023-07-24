@@ -1,0 +1,23 @@
+---
+import './CupcakeMenu.less';
+import CupcakeItem from '../CupcakeItem/CupcakeItem.astro';
+import { cupcakeMenu } from '../../assets/data/cupcakeMenu';
+---
+
+<section id="cupcake-menu">
+    <div class="cs-container">
+        <div class="cs-gallery">
+        {
+            cupcakeMenu.map( (cupcake) => 
+            <CupcakeItem 
+                name={cupcake.name} 
+                price={cupcake.price}
+                description={cupcake.description}
+                additionalDesc={cupcake.additionalDesc ? cupcake.additionalDesc : null}
+                imgUrl={cupcake.imgUrl}    
+            />
+            )
+        }
+        </div>
+    </div>
+</section>

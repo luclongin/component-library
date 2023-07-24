@@ -1,15 +1,19 @@
 ---
 import "./MenuList.less";
 import { flavorList, withoutGluten } from "../../assets/data/flavorList";
+
+const d = new Date();
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const currentMonth = months[d.getMonth()];
 ---
 
 <section id="menulist">
 	<div class="cs-container">
 		<div class="menu-intro">
 			<h2>Our flavors rotate throughout the year</h2>
-			<p class="subtitle">
-				Changing our flavors monthly keeps them interesting and fresh!
-			</p>
+			<h3>
+				Cupcake selection for {currentMonth}
+			</h3>
 		</div>
 		<div class="menulist-list">
 			<ul>

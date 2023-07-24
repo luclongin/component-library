@@ -12,68 +12,9 @@
         position: relative;
         z-index: 1;
 
-        .cs-container {
-            width: 100%;
-            /* changes to 1280 at tablet */
-            max-width: (550/16rem);
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* 48px - 108px */
-            gap: clamp(3rem, 6vw + 1.1em, 6.75rem);
-        }
-
-        .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: left;
-            width: 100%;
-            max-width: (542/16rem);
-            display: flex;
-            flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
-        }
-    
-        .cs-topper {
-            font-size: var(--topperFontSize);
-            line-height: 1.2em;
-            text-transform: uppercase;
-            text-align: inherit;
-            letter-spacing: .1em;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: (4/16rem);
-            display: block;
-        }
-    
-        .cs-title {
-            font-size: var(--headerFontSize);
-            font-weight: 900;
-            line-height: 1.2em;
-            text-align: inherit;
-            max-width: (700/16rem);
-            margin: 0 0 (16/16rem) 0;
-            color: var(--headerColor);
-            position: relative;
-        }
-    
-        .cs-text {
+        .cs-content p {
+            font-family: 'Sorts Mill Goudy', cursive;
             font-size: var(--bodyFontSize);
-            line-height: 1.5em;
-            text-align: inherit;
-            width: 100%;
-            max-width: (650/16rem);
-            margin: 0;
-            color: var(--bodyTextColor);
-        }
-
-        .cs-text {
-            /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
-            margin-bottom: (16/16rem);
-            &:last-of-type {
-                margin-bottom: (32/16rem);
-            }
         }
 
         .cs-image-group {
@@ -154,13 +95,6 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbsr-413 {
-        .cs-container {
-            max-width: (1280/16rem);
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
         .cs-content {
             width: 48%;
         }
