@@ -8,22 +8,11 @@
         font-style: italic;
         margin-bottom: 3rem;
         max-width: (445/16rem);
+        // for when the CSS column break, it doesn't
+        // separate the description from the image
+        // e.g: description in column 2, image in column 1
+        break-inside: avoid;
 
-        /*
-        .cs-image {
-            display: block;
-            position: relative;
-
-            img {
-                display: block;
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                object-position: 50% 50%;
-                
-            }
-        }
-        */
         .cs-image img {
             width: 100% !important;
             height: auto !important;

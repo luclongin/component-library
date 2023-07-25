@@ -21,7 +21,7 @@ const getFileFromArr = (arr, key) => {
     <picture class="cs-image">
         <source media="(max-width: 600px)" srcset={getFileFromArr(images, imgUrl)}>
         <source media="(min-width: 601px)" srcset={getFileFromArr(images, imgUrl)}>
-        <img decoding="async" src={getFileFromArr(images, imgUrl)} alt="logo" width="2200" height="1500">
+        <img loading="lazy" decoding="async" src={getFileFromArr(images, imgUrl)} alt="logo" width="600" height="600">
     </picture>
     <p class="cupcake-item-title">{name}</p>
     <p class="cupcake-item-price">{price}</p>
