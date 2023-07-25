@@ -122,7 +122,7 @@ export const cupcakeMenu = [
         imgUrl: 'apple_caramel_cupcakes_02.webp'
     },
     {
-        name: 'S’mores Artisan Cupcake',
+        name: "S'mores Artisan Cupcake",
         price: '50k',
         description: "We make a graham cracker crust, tuck marshmallow filling into our chocolate cupcake, then ice it with a marshmallow buttercream and dip it in our chocolate ganache with mini vegan marshmallows on top! Just too Good!",
         additionalDesc: '( Available October through March )',

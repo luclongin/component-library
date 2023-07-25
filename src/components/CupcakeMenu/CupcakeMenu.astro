@@ -46,11 +46,11 @@ const getDataFromImage = (img) => {
 						<p class="cupcake-item-description">
 							{getDataFromImage(image).description}
 						</p>
-						{getDataFromImage(image).additionalDesc ? (
+						{getDataFromImage(image).additionalDesc && (
 							<p class="cupcake-item-additionalDesc">
 								{getDataFromImage(image).additionalDesc}
 							</p>
-						) : null}
+						)}
 					</article>
 				))
 			}
