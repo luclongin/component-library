@@ -1,3 +1,11 @@
+export const emptyCupcakeItem = {
+    name: '',
+    price: '',
+    description: '',
+    additionalDesc: '',
+    imgUrl: ''
+}
+
 export const cupcakeMenu = [
     {
         name: 'Malted Honey & Blackberry Artisan Cupcake',
@@ -10,6 +18,7 @@ export const cupcakeMenu = [
         name: 'Raspberry Lady Pot Artisan Cupcake',
         price: '30k',
         description: "Cream cheese cupcakes filled with raspberry jam and iced in a light raspberry jam/cream cheese blend!",
+        additionalDesc: '',
         imgUrl: 'raspberry_lady_cc_2023.webp'
     },
     {
@@ -23,6 +32,7 @@ export const cupcakeMenu = [
         name: 'Pumpkin Chocolate Chip Cupcake',
         price: '35k',
         description: "A real shop favorite! Inspired by Spring Garden's pumpkin chocolate chip muffins. Iced with cream cheese.",
+        additionalDesc: '',
         imgUrl: 'pcc_cc.webp'
     },
     {
@@ -36,6 +46,7 @@ export const cupcakeMenu = [
         name: 'Classic Chocolate Cupcake',
         price: '35k',
         description: "The perennial kids' favorite cake! Butter cupcake with chocolate icing. Pure and simple.",
+        additionalDesc: '',
         imgUrl: 'image-asset.webp'
     },
     {
@@ -49,24 +60,28 @@ export const cupcakeMenu = [
         name: 'Chocolate Cupcake with Vanilla Buttercream ',
         price: '35k',
         description: "All Chocolate cupcakes with vanilla buttercream frosting.",
+        additionalDesc: '',
         imgUrl: 'choc_bc_cc_2023b.webp'
     },
     {
         name: 'Classic Vanilla Cupcake',
         price: '30k',
         description: "Pure and simple. Vanilla buttercream on our tender cream cheese cupcakes.",
+        additionalDesc: '',
         imgUrl: 'vanilla_cupcake.webp'
     },
     {
         name: 'Oreo Buttercream Cupcake',
         price: '35k',
         description: "Something for the kid in all of us! Chocolate cake made with Guittard Chocolate, enrobed in a chocolate cream cookie buttercream icing!",
+        additionalDesc: '',
         imgUrl: 'oreo_cupcake_2021.webp'
     },
     {
         name: 'Mocha Buttercream Cupcake',
         price: '35k',
         description: "The perfect combination of coffee and chocolate in a cake! Features organic unbleached flour, buttermilk, melted chocolate chips, organic espresso and pure vanilla.",
+        additionalDesc: '',
         imgUrl: 'mocha_cc_2023a.webp'
     },
     {
@@ -80,12 +95,14 @@ export const cupcakeMenu = [
         name: 'Seasonal Decorated Cupcakes',
         price: '40k',
         description: "Price may vary with seasonal decoration.",
+        additionalDesc: '',
         imgUrl: 'fall_deco_cc_2022_04.webp'
     },
     {
         name: '"18 Carat" Cupcake',
         price: '35k',
         description: "Made with grated organic carrots, pineapple, walnuts & spice. Our favorite carrot cake ... ever!",
+        additionalDesc: '',
         imgUrl: '18_karat_cupcake.webp'
     },
     {
@@ -99,6 +116,7 @@ export const cupcakeMenu = [
         name: 'Lemon Curd Pot',
         price: '40k',
         description: "Cream cheese cupcakes filled with our freshly cooked organic lemon curd. Iced with cream cheese frosting and a bit of zest on top!",
+        additionalDesc: '',
         imgUrl: 'lemon_curd_pot_2021c.webp'
     },
     {
@@ -112,6 +130,7 @@ export const cupcakeMenu = [
         name: 'Red Velvet Cupcake',
         price: '35k',
         description: "Classic red velvet with an extra dose of cocoa! Iced with cream cheese frosting and a few chocolate shavings.",
+        additionalDesc: '',
         imgUrl: 'red_velvet_cc_2023b.webp'
     },
     {
@@ -132,18 +151,21 @@ export const cupcakeMenu = [
         name: 'All Chocolate Cupcake',
         price: '30k',
         description: "Really makes me think of a cake mix cake ... for all the right reasons! (But its not - we make it from scratch just like all of our other cakes and use melted Guittard chocolate chips! ) It is fluffy, yet rich, has a tender crumb and just begs for a glass of cold milk to drink along with it!",
+        additionalDesc: '',
         imgUrl: 'aa_cupcake_2023.webp'
     },
     {
         name: 'Fresh Strawberry & Cream Pot',
         price: '40k',
         description: "Freshly sliced berries fill the inside of this cream cheese cupcake which is topped with vanilla buttercream.",
+        additionalDesc: '',
         imgUrl: 'strawberrypots_cc2017.webp'
     },
     {
         name: 'Pink Lemonade Cupcake',
         price: '35k',
         description: "Oh what a cheery cupcake! Pretty pink cake with a light, lemon buttercream & sparkling sugar crystals!",
+        additionalDesc: '',
         imgUrl: 'pink+lemonade+cc.webp'
     },
 ];

@@ -1,7 +1,7 @@
 ---
 import "./CupcakeMenu.less";
 import "./CupcakeItem.less";
-import { cupcakeMenu } from "../../assets/data/cupcakeMenu";
+import { cupcakeMenu, emptyCupcakeItem } from "../../assets/data/cupcakeMenu";
 const images = await Astro.glob("../../assets/images/cupcakes/*").then(
 	(files) => {
 		return files.map((file) => file.default);
@@ -9,7 +9,7 @@ const images = await Astro.glob("../../assets/images/cupcakes/*").then(
 );
 
 const getDataFromImage = (img) => {
-	let res = {};
+	let res = emptyCupcakeItem;
 	cupcakeMenu.map((cupcake) => {
 		if (img.includes(cupcake.imgUrl)) {
 			res = cupcake;
