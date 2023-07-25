@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #menulist {
+    #cupcakes-month {
         background-color: inherit;
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         padding: var(--sectionPadding);
@@ -13,6 +13,7 @@
         position: relative;
         z-index: 1;
 
+        
         .cs-container {
             gap: clamp(2rem, 6vw + 1.1em, 4.75rem);
         }
@@ -32,7 +33,7 @@
         .menu-intro h3 {
             margin-top: 2rem;
             font-weight: 800;
-            font-size: clamp(1rem, 5vw, 2rem);
+            font-size: var(--subheaderFontSize);
             text-transform: uppercase;
             color: var(--bodyTextColor)!important;
         }
@@ -55,7 +56,7 @@
 
         .menulist-list ul li {
             list-style: none;
-            font-size: clamp(0.6rem, 5vw, 1.6rem);
+            font-size: var(--subheaderFontSize);
             padding: 0 0 clamp(0.9rem, 5vw, 1.8rem) 0;
             color: var(--bodyTextColor);
             font-weight: 500;
@@ -74,7 +75,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #menulist {
+    #cupcakes-month {
         .cs-container {
             flex-direction: column;
         }

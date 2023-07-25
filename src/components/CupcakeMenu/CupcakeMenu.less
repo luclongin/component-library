@@ -4,9 +4,11 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cupcake-menu {
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+    #cupcakes-all {
+        //
         padding: var(--sectionPadding);
+        padding-top: 0;
+
         /* clips svg as the screen grows so it doesn't overflow */
         overflow: hidden;
         position: relative;
@@ -24,7 +26,13 @@
         }
 
         .cs-gallery {
-            padding: 0;
+            border-top: 1px solid var(--borderColor);
+            border-top-width: calc(100% - 4rem);
+            padding: var(--sectionPadding);
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+
             margin: 0;
             //display: flex;
             //justify-content: center;
@@ -40,7 +48,7 @@
 
 /* Tablet - 640 */
 @media only screen and (min-width: 40rem) {
-    #cupcake-menu {
+    #cupcakes-all {
         /*.cs-gallery {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -63,7 +71,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #cupcake-menu {
+    #cupcakes-all {
         .cs-container {
             margin-left: 0;
             margin-right: 0;
