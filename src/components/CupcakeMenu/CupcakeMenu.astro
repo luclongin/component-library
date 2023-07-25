@@ -9,7 +9,7 @@ const images = await Astro.glob("../../assets/images/cupcakes/*").then(
 );
 
 const getDataFromImage = (img) => {
-	let res = null;
+	let res = {};
 	cupcakeMenu.map((cupcake) => {
 		if (img.includes(cupcake.imgUrl)) {
 			res = cupcake;
