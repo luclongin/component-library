@@ -1,5 +1,5 @@
-{
-    "cupcakes": [
+[
+    
         {
             "name": "Malted Honey & Blackberry Artisan Cupcake",
             "price": "35k",
@@ -161,5 +161,4 @@
             "additionalDesc": "",
             "imgUrl": "pink+lemonade+cc.webp"
         }
-    ]
-}
+]

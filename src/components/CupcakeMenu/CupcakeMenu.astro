@@ -16,12 +16,12 @@ import { cupcakeMenu } from "../../assets/data/cupcakeMenu";
 		<div class="cs-gallery">
 			{
 				images.map((image) =>
-					cupcakeMenuJSON.cupcakes.map(
+					cupcakeMenuJSON.map(
 						(cupcake) =>
 
 							image.includes(cupcake.imgUrl) && (
 								
-								<p>asd</p>
+								<p>{image}</p>
 							)
 					)
 				)
