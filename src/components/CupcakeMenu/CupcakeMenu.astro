@@ -7,27 +7,9 @@ const images = await Astro.glob("../../assets/images/cupcakes/*").then(
 		return files.map((file) => file.default);
 	}
 );
-
-const emptyCupcakeItem = {
-	name: "",
-	price: "",
-	description: "",
-	additionalDesc: "",
-	imgUrl: "",
-};
-
-function getDataFromImage(img) {
-	let res = emptyCupcakeItem;
-	cupcakeMenu.map((cupcake) => {
-		if (img.includes(cupcake.imgUrl)) {
-			res = cupcake;
-		}
-	});
-	console.log("res:", res);
-	return res;
-}
+import { getDataFromImage } from "../../assets/data/cupcakeMenu";
 ---
-
+<script src="../../assets/data/cupcakeMenu.js"></script>
 <section id="cupcakes-all">
 	<div class="cs-container">
 		<div class="cs-gallery">
@@ -47,9 +29,11 @@ function getDataFromImage(img) {
 							/>
 						</picture>
 						
-						<!--<p class="cupcake-item-title">
+						<p class="cupcake-item-title">
 							{getDataFromImage(image).price}
 						</p>
+
+						<!--
 						<p class="cupcake-item-price">
 							{getDataFromImage(image).price}
 						</p>
