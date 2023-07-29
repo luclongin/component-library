@@ -18,32 +18,10 @@ import { cupcakeMenu } from "../../assets/data/cupcakeMenu";
 				images.map((image) =>
 					cupcakeMenuJSON.cupcakes.map(
 						(cupcake) =>
+
 							image.includes(cupcake.imgUrl) && (
 								
-								<article class="cupcake-item">
-									<picture class="cs-image">
-										<source
-											media="(max-width: 600px)"
-											srcset={image}
-										/>
-										<source
-											media="(min-width: 601px)"
-											srcset={image}
-										/>
-										<img
-											loading="lazy"
-											decoding="async"
-											src={image}
-											alt="cupcake picture"
-											width="600"
-											height="600"
-										/>
-									</picture>
-
-									<p class="cupcake-item-title">
-										{cupcake.name}
-									</p>
-								</article>
+								<p>asd</p>
 							)
 					)
 				)
