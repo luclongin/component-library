@@ -1,10 +1,20 @@
 export const emptyCupcakeItem = {
-    name: '',
-    price: '',
-    description: '',
-    additionalDesc: '',
-    imgUrl: ''
-}
+    name: "",
+    price: "",
+    description: "",
+    additionalDesc: "",
+    imgUrl: "",
+};
+
+export const getDataFromImage = (img) => {
+    let res = emptyCupcakeItem;
+    cupcakeMenu.map((cupcake) => {
+        if (img.includes(cupcake.imgUrl)) {
+            res = cupcake;
+        }
+    });
+    return res;
+};
 
 export const cupcakeMenu = [
     {
